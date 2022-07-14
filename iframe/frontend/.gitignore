@@ -1,0 +1,7 @@
+.DS_*
+*.log
+logs
+/node_modules
+package-lock.json
+/build
+.env
