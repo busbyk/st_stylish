@@ -33,9 +33,10 @@ const StylishIframe = ({ args }: StylishIframeProps) => {
         overflow: "hidden",
         width: "100%",
         height: height || "100%",
+        backgroundColor: "#ffffff",
       }}
     >
-      {/* {loadingIframe && (
+      {loadingIframe && (
         <Spinner
           style={{
             height: "100%",
@@ -45,7 +46,7 @@ const StylishIframe = ({ args }: StylishIframeProps) => {
             alignItems: "center",
           }}
         />
-      )} */}
+      )}
       <iframe
         allow={DEFAULT_IFRAME_FEATURE_POLICY}
         style={{
@@ -62,7 +63,7 @@ const StylishIframe = ({ args }: StylishIframeProps) => {
         scrolling={scrolling}
         sandbox={DEFAULT_IFRAME_SANDBOX_POLICY}
         title="stylish_iframe"
-        // onLoad={() => setLoadingIframe(false)}
+        onLoad={() => setLoadingIframe(false)}
       />
     </div>
   )

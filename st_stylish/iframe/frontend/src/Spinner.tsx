@@ -1,5 +1,6 @@
 import { Theme } from "streamlit-component-lib"
 import React, { CSSProperties } from "react"
+import "./css/spinner.css"
 
 interface SpinnerProps {
   style?: CSSProperties
@@ -13,13 +14,7 @@ const Spinner = ({ style, stTheme }: SpinnerProps) => {
         ...style,
       }}
     >
-      <div
-        className="loading-spinner"
-        style={{
-          border: "10px solid #f3f3f3",
-          borderTop: "10px solid #383636",
-        }}
-      ></div>
+      <div className="loading-spinner"></div>
     </div>
   )
 }
