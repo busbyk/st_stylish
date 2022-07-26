@@ -4,7 +4,17 @@ A collection of custom components and helper functions for Streamlit that are fo
 
 The primary functionality in this repo is in the `/st_stylish/helpers.py` module. This module provides functions that inject css via the `st.markdown` hack that target elements in a more reliable way than the typical generated ids approach. Readable class names that should change much less frequently, DOM structure, and tag attribute names are used to target elements.
 
-## Helper function use cases
+## Setup
+
+### Local
+
+1. Create a virtual environment
+2. Activate your virtual environment
+3. `pip install -r requirements.txt`
+
+## Helper functions
+
+### Use cases
 
 1. Full page component
 
@@ -13,7 +23,12 @@ The primary functionality in this repo is in the `/st_stylish/helpers.py` module
 #### Full page component
 
 1. Single page - full page iframe `/examples/singlepage.py`
+
+   Run it: `streamlit run ./examples/singlepage.py`
+
 2. Multi page - full page iframe `/examples/multipage/__init__.py`
+
+   Run it: `streamlit run ./examples/multipage/home.py`
 
 ## Custom components
 
@@ -38,6 +53,6 @@ The primary functionality in this repo is in the `/st_stylish/helpers.py` module
 
 ## TODO
 
-- convenience function for a full page component
-- add docstrings to all helper functions
-- implement StylesManager concept
+- [x] convenience function for a full page component
+- [x] add docstrings to all helper functions
+- [ ] implement StylesManager concept
