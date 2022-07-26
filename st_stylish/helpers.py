@@ -161,6 +161,8 @@ When this is used the script should only contain a single Streamlit widget
 in the main block container (i.e. using a st.sidebar will not affect the 
 main container).
 
+Works best with st.set_page_config(layout='wide').
+
 Returns
 -------
 None

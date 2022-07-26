@@ -17,6 +17,7 @@ The primary functionality in this repo is in the `/st_stylish/helpers.py` module
 ### Use cases
 
 1. Full page component
+   Note: Make sure to set `layout='wide'` with `st.set_page_config(layout='wide')`
 
 ### Examples
 
