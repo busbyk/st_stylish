@@ -30,6 +30,10 @@ The primary functionality in this repo is in the `/st_stylish/helpers.py` module
 
    Run it: `streamlit run ./examples/multipage/home.py`
 
+3. Full page component using convenience function `/examples/fullpage_component.py`
+
+   Run it: `streamlit run ./examples/fullpage_component.py`
+
 ## Custom components
 
 1. iframe
