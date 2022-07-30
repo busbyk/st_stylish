@@ -35,6 +35,10 @@ The primary functionality in this repo is in the `/st_stylish/helpers.py` module
 
    Run it: `streamlit run ./examples/fullpage_component.py`
 
+4. Using the StyleInjector context manager `/examples/with_StyleInjector.py`
+
+   Run it: `streamlit run ./examples/with_StyleInjector.py`
+
 ## Custom components
 
 1. iframe
@@ -51,13 +55,29 @@ The primary functionality in this repo is in the `/st_stylish/helpers.py` module
    Then you can use it in a streamlit file. From project root:
    `streamlit run examples/stylish_iframe.py`
 
+## Using the StyleInjector
+
+If you want to style multiple components (i.e. `.element-container`s) you can use the StyleInjector class as a context manager like so:
+
+```
+with StyleInjector() as injector:
+  injector.set_appview_padding(0)
+```
+
+The StyleInjector will keep track of the `components.markdown` calls. When you call the StyleInjector's `set_n_component_height_width` the index of the streamlit component will be offset by the number of previously injected markdown components.
+
+So to style the first streamlit component that you call in the script, call `set_n_component_height_width` with an `index` argument of 0.
+
+See `/examples/with_StyleInjector.py` for example code.
+
 ## Enhancements
 
-1. StylesManager class
+1. ~~StylesManager class~~ (Done)
    I want to create a StylesManager class that controls the injection of `<style>` tags via `st.markdown` and keeps an index of `.element-container`s so we can target specific `.element-container`s to style independently. Right now the `set_component_height_width` function just targets the last streamlit element. This works great for a full page iframe, for example, but you then cannot add any more components below that iframe.
 
 ## TODO
 
 - [x] convenience function for a full page component
 - [x] add docstrings to all helper functions
-- [ ] implement StylesManager concept
+- [x] implement StylesManager concept
+- [ ] deploy to PyPi
