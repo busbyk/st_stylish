@@ -1,0 +1,20 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "st_stylish"
+version = "1.0.0"
+description = "A collection of custom components and helper functions for Streamlit that are focused on providing advanced styling functionality."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Kellen Busby Software LLC", email = "kellenbusby@gmail.com" }]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "streamlit >= 0.63",
+]
+requires-python = ">=3.8"

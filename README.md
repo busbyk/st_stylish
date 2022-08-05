@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/st_stylish.svg)](https://badge.fury.io/py/st_stylish)
+
 # st_stylish
 
 A collection of custom components and helper functions for Streamlit that are focused on providing advanced styling functionality.
@@ -80,4 +82,4 @@ See `/examples/with_StyleInjector.py` for example code.
 - [x] convenience function for a full page component
 - [x] add docstrings to all helper functions
 - [x] implement StylesManager concept
-- [ ] deploy to PyPi
+- [x] deploy to PyPi

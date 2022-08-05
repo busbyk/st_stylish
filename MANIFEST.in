@@ -1,1 +1,2 @@
 recursive-include package/frontend/build *
+include **/*.toml
